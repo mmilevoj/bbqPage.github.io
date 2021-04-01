@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    background-color: #404040;
+    background-image: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+}
+
+.top-header{
+    border-top: 5px solid #F18119;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    text-align: center;
+}
+
+.top-text{
+    color: #F18119;
+    font-size:0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.center-header{
+    width: 80%;
+    margin-top: em;
+    text-align: center;
+    color:rgba(255,255,255, 0.6);
+    font-weight: 400;
+    font-size: 2rem;
+}
+.span-bold{
+    font-weight: 800;
+    color: white;
+}
+
+.bottom-header{
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.title{
+    text-align: center;
+    color: #404040;
+}
+
+.subtitle{
+    text-align: center;
+    text-transform: uppercase;
+    color: #F18119;   
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+.content{
+    text-align: center;
+    color: grey;
+    font-size: 1.05rem;
+}
+.description-form{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.description{
+    width:80%;
+    margin: 0 auto;
+}
+
+header *, .description *{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fname, #email{
+    text-align: center;
+    border: 1px solid #404040;
+    border-radius: 5px;
+}
+
+.btn{
+    border: none;
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
+    border-radius: 5px;
+    padding: .5em 4.75em;
+    outline: none;
+    cursor: pointer;
+    transition: transform 300ms;
+}
+
+.btn:hover, .btn:focus{
+    transform: scale(1.2);
+}
+
+#fname:hover, #fname:focus, #email:hover, #email:focus{
+     transform: scale(1.2);
+     transition: transform 300ms;
+     
+}
+
+input{
+    outline: none;
+    padding: 0.5em;
+    font-family: inherit;
+    font-size: .85rem;
+}
+
+.btn-register{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    font-size: 0.75rem;
+    outline: none;
+}
+
+.desciption-footer{
+    text-align: center;
+    color: grey;
+    font-size: .75rem;
+    letter-spacing: 0.03rem;
+}
+
+@media(min-width:700px){
+    
+  html,body{
+      min-height: 100vh;
+  }
+  .container{
+      display:flex;
+      flex-direction: row;
+      min-height: 100vh;
+  }
+
+  header{
+      width: 50%;
+  }
+  
+  .description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+  }
+  
+  .top-header,.center-header{
+      font-size: 2rem;
+  }
+
+  .center-header{
+      margin-top: 5.5em;
+  }
+  
+  .bottom-header{
+      font-size: 1.5rem;
+  }
+
+}
